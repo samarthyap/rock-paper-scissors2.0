@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.gamebuttons {
+    height: 33vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.gamebuttons>button {
+    color: aliceblue;
+    border-radius: 5%;
+    background-image: linear-gradient(rgb(63, 61, 61), rgb(4, 4, 48));
+    font-size: 1.5rem;
+    height: 128px;
+    width: 128px;
+}
+
+.choices {
+    display: flex;
+    gap: 128px;
+    justify-content: center;
+    align-items: center;
+}
+.scores{
+    display: flex;
+    gap: 128px;
+    justify-content: center;
+    align-items: center;
+}
