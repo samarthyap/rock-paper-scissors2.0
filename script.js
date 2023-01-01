@@ -14,7 +14,7 @@ selected_button.forEach(button => button.addEventListener("click", () => {
     gameplayed.textContent = `Games Played:${timesplayed}`
     player = button.textContent;
     computerTurn();
-    chnageText();
+    changeText();
     
     if (timesplayed %5=== 0) {
         final_result=document.createElement('h3')
@@ -61,7 +61,8 @@ function checkwinner() {
     }
 }
 // Function to extract and chnage the text according to the current state of the game 
-function chnageText(){
+//Function name had typo and is corrected.
+function changeText(){
     playerChoice.textContent = `Player:${player}`
     computerChoice.textContent = `Computer:${computer}`
     initialresult.textContent=`Result :${checkwinner()}`
